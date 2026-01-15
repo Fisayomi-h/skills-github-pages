@@ -1,54 +1,173 @@
-<header>
+Marketing Campaign Performance Analysis (SQL)
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+ PROJECT OVERVIEW
 
-# GitHub Pages
+In today’s data-driven marketing landscape, understanding which campaigns truly drive value is critical. This project analyzes a large-scale marketing campaign dataset using SQL (PostgreSQL) to uncover insights around ROI, cost efficiency, conversion performance, engagement, and audience segmentation.
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+The goal of this analysis is to help businesses:
 
-</header>
+Identify high-performing campaigns and channels
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+Detect inefficient spending
 
-## Step 1: Enable GitHub Pages
+Understand which audiences and regions convert best
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+Make data-backed marketing decisions
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+ DATASET DESCRIPTION
 
-### :keyboard: Activity: Enable GitHub Pages
+Rows: 50,000+ campaign records
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
+Columns: 16
 
-<footer>
+Granularity: Each row represents a single marketing campaign
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+Key Fields:
 
----
+campaign_id
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+company
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+campaign_type
 
-</footer>
+gender
+
+age_group
+
+channel_used
+
+conversion_rate
+
+acquisition_cost
+
+roi
+
+location
+
+impression
+
+clicks
+
+engagement_score
+
+customer_segment
+
+date
+
+ DATA PREPARATION & CLEANING
+
+Before analysis, the dataset was cleaned using Excel:
+
+Removed currency symbols from acquisition_cost
+
+Split the target_audience field into:
+
+gender
+
+age_group
+
+Ensured consistent formatting for numerical and date fields
+
+The cleaned dataset was then imported into PostgreSQL (pgAdmin), and the table schema was created using SQL.
+
+ TOOLS & TECHNOLOGIES
+
+SQL (PostgreSQL)
+
+pgAdmin
+
+Microsoft Excel
+
+
+ Key Business Questions Answered
+
+Which campaigns generated the highest ROI?
+
+Which campaign type + channel combinations are most cost-efficient?
+
+How does conversion rate vary by location?
+
+Does high engagement always lead to high conversion?
+
+Which demographics and customer segments deliver the most value?
+
+Which campaigns have high impressions but poor performance?
+
+ Analysis Highlights
+ Top Campaigns by ROI
+
+Multiple campaigns achieved an ROI of 8, indicating strong execution across different strategies.
+
+Email marketing appeared in 3 of the top 5 campaigns, showing consistency and versatility across campaign types.
+
+Search, Display, Influencer, and Social Media campaigns all performed well when paired with the right channel.
+
+ COST-EFFICIENT CAMPAIGNS
+
+The most cost-efficient strategy was Search campaigns on Websites.
+
+Influencer campaigns on YouTube and Display ads on Facebook also delivered strong value.
+
+Display campaigns appeared multiple times in the top rankings, proving that placement matters more than format alone.
+
+ REGIONAL CONVERSION PERFORMANCE
+
+Conversion rates were relatively balanced across regions.
+
+New York recorded the highest conversion rate (~8.02%), slightly outperforming cities like Chicago and Miami.
+
+This suggests location plays a secondary role compared to campaign type and channel, though New York may be a strong test market.
+
+ IMPRESSIONS, EMGAGEMENT & CONVERSION
+
+Key Insights:
+
+High engagement does not automatically mean high conversion.
+
+Campaigns with high engagement + high click volume performed best.
+
+Some campaigns had very high impressions but low conversion, indicating poor targeting or weak calls-to-action.
+
+Business Takeaway:
+Engagement metrics should be evaluated alongside clicks and conversion rates—not in isolation.
+
+ AUDIENCE SEGMENTATION
+
+ROI was relatively consistent across demographic groups, indicating a broadly effective strategy.
+
+However, conversion rates varied slightly:
+
+Women aged 25–34 in the “Outdoor Adventurers” segment recorded the highest conversion rate (8.07%).
+
+This group represents a strong opportunity for personalized and targeted campaigns.
+
+
+ UNDERPERFORMING CAMPAIGNS
+
+Some companies recorded high impressions but low conversion and ROI, likely due to:
+
+Poor audience targeting
+
+Weak call-to-action
+
+Platform–message mismatch
+
+ RECOMMENDATIONS
+
+Prioritize low-cost, high-ROI channels (Search + Email, Display + Instagram).
+
+Double down on high-converting segments (Women 25–34, Outdoor Adventurers).
+
+Rework underperforming campaigns by:
+
+Refining targeting
+
+Improving landing page UX
+
+Strengthening calls-to-action
+
+Shift focus from vanity metrics (impressions) to conversion-driven KPIs.
+
+ CONCLUSION
+
+This analysis reveals clear, actionable patterns in marketing performance across channels, audiences, and regions. By reallocating budget toward high-performing strategies and refining weak campaigns, businesses can significantly improve ROI and customer engagement.
