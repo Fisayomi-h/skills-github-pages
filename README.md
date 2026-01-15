@@ -109,6 +109,8 @@ The most cost-efficient strategy was Search campaigns on Websites.
 Influencer campaigns on YouTube and Display ads on Facebook also delivered strong value.
 
 Display campaigns appeared multiple times in the top rankings, proving that placement matters more than format alone.
+![Cost Efficient Campaigns](https://github.com/user-attachments/assets/127f4141-2ef4-4cf0-a544-2b755e2d348d)
+![Avg Cost](https://github.com/user-attachments/assets/148af433-1dae-4004-9c70-77ce8614af0f)
 
  REGIONAL CONVERSION PERFORMANCE
 
@@ -117,10 +119,12 @@ Conversion rates were relatively balanced across regions.
 New York recorded the highest conversion rate (~8.02%), slightly outperforming cities like Chicago and Miami.
 
 This suggests location plays a secondary role compared to campaign type and channel, though New York may be a strong test market.
+![Avg conversion](https://github.com/user-attachments/assets/6e7e972d-2926-4dd8-9cb1-411f7dbd0036)
 
  IMPRESSIONS, EMGAGEMENT & CONVERSION
 
 Key Insights:
+![Engagement score](https://github.com/user-attachments/assets/1e098871-d429-4555-9c23-05bb13cb2df5)
 
 High engagement does not automatically mean high conversion.
 
@@ -134,12 +138,14 @@ Engagement metrics should be evaluated alongside clicks and conversion rates—n
  AUDIENCE SEGMENTATION
 
 ROI was relatively consistent across demographic groups, indicating a broadly effective strategy.
+![Avg ROI](https://github.com/user-attachments/assets/c00896fd-2d38-4407-b429-5eec700b096b)
 
 However, conversion rates varied slightly:
 
 Women aged 25–34 in the “Outdoor Adventurers” segment recorded the highest conversion rate (8.07%).
 
 This group represents a strong opportunity for personalized and targeted campaigns.
+![Conversionm rate](https://github.com/user-attachments/assets/7a3bc0b3-27e6-4a4d-bef1-1e14f5512a05)
 
 
  UNDERPERFORMING CAMPAIGNS
